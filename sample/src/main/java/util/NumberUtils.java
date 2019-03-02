@@ -2,11 +2,11 @@ package main.java.util;
 
 public class NumberUtils {
 
-	/** 
-	 * •¶š—ñ‚ğInteger‚É•ÏŠ·‚µ‚Ü‚·B
-	 * •ÏŠ·‚Å‚«‚ê‚Î®”‚ğA‚Å‚«‚È‚¯‚ê‚Înull‚ğ•Ô‚µ‚Ü‚·B
+	/**
+	 * æ–‡å­—åˆ—ã‚’Integerã«å¤‰æ›ã™ã‚‹ã€‚
+	 * å¤‰æ›ã§ããªã‘ã‚Œã°nullã‚’è¿”ã™ã€‚
 	 */
-	public Integer parseToIntegerElseNull(String str) {
+	public Integer parseToInteger(String str) {
 		try {
 			return Integer.parseInt(str);
 		} catch(NumberFormatException | NullPointerException e) {
@@ -15,8 +15,8 @@ public class NumberUtils {
 	}
 
 	/** 
-	 * •¶š—ñ‚ğInteger‚É•ÏŠ·‚µ‚Ü‚·B
-	 * •ÏŠ·‚Å‚«‚ê‚Î®”‚ğA‚Å‚«‚È‚¯‚ê‚Î‘æ2ˆø”‚ğ•Ô‚µ‚Ü‚·B
+	 * æ–‡å­—åˆ—ã‚’Integerã«å¤‰æ›ã™ã‚‹ã€‚
+	 * å¤‰æ›ã§ããªã‘ã‚Œã°ç¬¬äºŒå¼•æ•°ã‚’è¿”ã™ã€‚
 	 */
 	public Integer parseToInteger(String str, Integer integer) {
 		try {
@@ -27,10 +27,10 @@ public class NumberUtils {
 	}
 
 	/** 
-	 * •¶š—ñ‚ğLong‚É•ÏŠ·‚µ‚Ü‚·B
-	 * •ÏŠ·‚Å‚«‚ê‚Î®”‚ğA‚Å‚«‚È‚¯‚ê‚Înull‚ğ•Ô‚µ‚Ü‚·B
+	 * æ–‡å­—åˆ—ã‚’Longã«å¤‰æ›ã™ã‚‹ã€‚
+	 * å¤‰æ›ã§ããªã‘ã‚Œã°nullã‚’è¿”ã™ã€‚
 	 */
-	public Long parseToLongElseNull(String str) {
+	public Long parseToLong(String str) {
 		try {
 			return Long.parseLong(str);
 		} catch(NumberFormatException | NullPointerException e) {
@@ -38,9 +38,9 @@ public class NumberUtils {
 		}
 	}
 
-	/** 
-	 * •¶š—ñ‚ğLong‚É•ÏŠ·‚µ‚Ü‚·B
-	 * •ÏŠ·‚Å‚«‚ê‚Î®”‚ğA‚Å‚«‚È‚¯‚ê‚Î‘æ2ˆø”‚ğ•Ô‚µ‚Ü‚·B
+	/**
+	 * æ–‡å­—åˆ—ã‚’Longã«å¤‰æ›ã™ã‚‹ã€‚
+	 * å¤‰æ›ã§ããªã‘ã‚Œã°ç¬¬äºŒå¼•æ•°ã‚’è¿”ã™ã€‚
 	 */
 	public Long parseToLong(String str, Long l) {
 		try {
